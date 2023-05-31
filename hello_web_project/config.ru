@@ -1,2 +1,2 @@
-require './app'
+require './app_2'
 run Application
