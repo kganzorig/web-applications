@@ -6,10 +6,11 @@ class Application < Sinatra::Base
         register Sinatra::Reloader 
     end 
 
-    get '/hello' do
+    post '/submit' do
         name = params[:name]
+        message = params[:message]
 
-        return "Hello #{name}"
+        return "Thanks #{name}, you sent this message: '#{message}'"
     end
 end 
       
