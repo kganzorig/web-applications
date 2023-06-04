@@ -19,6 +19,7 @@ describe Application do
     context 'GET /hello' do
         it 'returns the html index' do
             response = get('/hello')
+           
 
         expect(response.body).to include ('<h1>Hello!</h1>')
 
