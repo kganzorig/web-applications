@@ -11,14 +11,14 @@ class Application < Sinatra::Base
     end   
 =end 
 
-=begin
-    get '/hello' do 
+       get '/hello' do 
         name = params[:name]
+        
         
         return "Hello #{name}"
     end 
 
-=end 
+end 
 
 
 =begin 
@@ -29,6 +29,5 @@ class Application < Sinatra::Base
         return "Thanks #{name}, you sent this message: '#{message}'"
     end
 =end
-end 
       
 

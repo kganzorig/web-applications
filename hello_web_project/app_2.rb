@@ -14,8 +14,7 @@ class Application < Sinatra::Base
     end 
 
     get '/hello' do 
-        @name = params[:name]
-        
+        @name = 'Khuslen'
         
         return erb(:index)
     end 
