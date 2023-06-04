@@ -12,4 +12,11 @@ class Application < Sinatra::Base
 
        return new_names
     end 
+
+    get '/hello' do 
+        name = params[:name]
+        
+        
+        return erb(:index)
+    end 
 end 
